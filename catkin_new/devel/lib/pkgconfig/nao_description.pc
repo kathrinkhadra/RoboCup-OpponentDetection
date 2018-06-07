@@ -1,0 +1,8 @@
+prefix=/home/looly/catkin_new/devel
+
+Name: nao_description
+Description: Description of nao_description
+Version: 0.5.15
+Cflags: 
+Libs: -L/home/looly/catkin_new/devel/lib 
+Requires: 

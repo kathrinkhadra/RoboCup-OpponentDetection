@@ -1,0 +1,8 @@
+prefix=/home/looly/catkin_new/devel
+
+Name: naoqi_driver
+Description: Description of naoqi_driver
+Version: 0.5.10
+Cflags: 
+Libs: -L/home/looly/catkin_new/devel/lib -lnaoqi_driver_module -lnaoqi_driver
+Requires: 

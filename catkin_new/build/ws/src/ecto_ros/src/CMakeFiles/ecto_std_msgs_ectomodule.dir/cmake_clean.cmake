@@ -1,0 +1,42 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/ecto_std_msgs_ectomodule.dir/ecto_std_msgs.cpp.o"
+  "CMakeFiles/ecto_std_msgs_ectomodule.dir/wrap_std_msgs_Bool.cpp.o"
+  "CMakeFiles/ecto_std_msgs_ectomodule.dir/wrap_std_msgs_Byte.cpp.o"
+  "CMakeFiles/ecto_std_msgs_ectomodule.dir/wrap_std_msgs_ByteMultiArray.cpp.o"
+  "CMakeFiles/ecto_std_msgs_ectomodule.dir/wrap_std_msgs_Char.cpp.o"
+  "CMakeFiles/ecto_std_msgs_ectomodule.dir/wrap_std_msgs_ColorRGBA.cpp.o"
+  "CMakeFiles/ecto_std_msgs_ectomodule.dir/wrap_std_msgs_Duration.cpp.o"
+  "CMakeFiles/ecto_std_msgs_ectomodule.dir/wrap_std_msgs_Empty.cpp.o"
+  "CMakeFiles/ecto_std_msgs_ectomodule.dir/wrap_std_msgs_Float32.cpp.o"
+  "CMakeFiles/ecto_std_msgs_ectomodule.dir/wrap_std_msgs_Float32MultiArray.cpp.o"
+  "CMakeFiles/ecto_std_msgs_ectomodule.dir/wrap_std_msgs_Float64.cpp.o"
+  "CMakeFiles/ecto_std_msgs_ectomodule.dir/wrap_std_msgs_Float64MultiArray.cpp.o"
+  "CMakeFiles/ecto_std_msgs_ectomodule.dir/wrap_std_msgs_Header.cpp.o"
+  "CMakeFiles/ecto_std_msgs_ectomodule.dir/wrap_std_msgs_Int16.cpp.o"
+  "CMakeFiles/ecto_std_msgs_ectomodule.dir/wrap_std_msgs_Int16MultiArray.cpp.o"
+  "CMakeFiles/ecto_std_msgs_ectomodule.dir/wrap_std_msgs_Int32.cpp.o"
+  "CMakeFiles/ecto_std_msgs_ectomodule.dir/wrap_std_msgs_Int32MultiArray.cpp.o"
+  "CMakeFiles/ecto_std_msgs_ectomodule.dir/wrap_std_msgs_Int64.cpp.o"
+  "CMakeFiles/ecto_std_msgs_ectomodule.dir/wrap_std_msgs_Int64MultiArray.cpp.o"
+  "CMakeFiles/ecto_std_msgs_ectomodule.dir/wrap_std_msgs_Int8.cpp.o"
+  "CMakeFiles/ecto_std_msgs_ectomodule.dir/wrap_std_msgs_Int8MultiArray.cpp.o"
+  "CMakeFiles/ecto_std_msgs_ectomodule.dir/wrap_std_msgs_MultiArrayDimension.cpp.o"
+  "CMakeFiles/ecto_std_msgs_ectomodule.dir/wrap_std_msgs_MultiArrayLayout.cpp.o"
+  "CMakeFiles/ecto_std_msgs_ectomodule.dir/wrap_std_msgs_String.cpp.o"
+  "CMakeFiles/ecto_std_msgs_ectomodule.dir/wrap_std_msgs_Time.cpp.o"
+  "CMakeFiles/ecto_std_msgs_ectomodule.dir/wrap_std_msgs_UInt16.cpp.o"
+  "CMakeFiles/ecto_std_msgs_ectomodule.dir/wrap_std_msgs_UInt16MultiArray.cpp.o"
+  "CMakeFiles/ecto_std_msgs_ectomodule.dir/wrap_std_msgs_UInt32.cpp.o"
+  "CMakeFiles/ecto_std_msgs_ectomodule.dir/wrap_std_msgs_UInt32MultiArray.cpp.o"
+  "CMakeFiles/ecto_std_msgs_ectomodule.dir/wrap_std_msgs_UInt64.cpp.o"
+  "CMakeFiles/ecto_std_msgs_ectomodule.dir/wrap_std_msgs_UInt64MultiArray.cpp.o"
+  "CMakeFiles/ecto_std_msgs_ectomodule.dir/wrap_std_msgs_UInt8.cpp.o"
+  "CMakeFiles/ecto_std_msgs_ectomodule.dir/wrap_std_msgs_UInt8MultiArray.cpp.o"
+  "/home/looly/catkin_new/devel/lib/python2.7/dist-packages/ecto_ros/ecto_std_msgs.pdb"
+  "/home/looly/catkin_new/devel/lib/python2.7/dist-packages/ecto_ros/ecto_std_msgs.so"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/ecto_std_msgs_ectomodule.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

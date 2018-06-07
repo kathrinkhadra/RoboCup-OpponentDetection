@@ -1,0 +1,8 @@
+prefix=/home/looly/catkin_new/install
+
+Name: ecto_pcl
+Description: Description of ecto_pcl
+Version: 0.4.5
+Cflags: -I/home/looly/catkin_new/install/include
+Libs: -L/home/looly/catkin_new/install/lib 
+Requires: pcl_conversions sensor_msgs

@@ -1,0 +1,6 @@
+set(nao_pose_SETUP_PY_VERSION "0.2.3")
+set(nao_pose_SETUP_PY_SCRIPTS "")
+set(nao_pose_SETUP_PY_PACKAGES "xapparser")
+set(nao_pose_SETUP_PY_PACKAGE_DIRS "src/xapparser")
+set(nao_pose_SETUP_PY_MODULES "")
+set(nao_pose_SETUP_PY_MODULE_DIRS "")

@@ -1,0 +1,8 @@
+prefix=/home/looly/catkin_new/devel
+
+Name: object_recognition_ros
+Description: Description of object_recognition_ros
+Version: 0.3.7
+Cflags: -I/home/looly/catkin_new/src/ws/src/ork_ros/include
+Libs: -L/home/looly/catkin_new/devel/lib -lobject_information_cache
+Requires: object_recognition_core object_recognition_msgs

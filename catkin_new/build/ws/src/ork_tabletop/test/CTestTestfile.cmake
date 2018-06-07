@@ -1,0 +1,11 @@
+# CMake generated Testfile for 
+# Source directory: /home/looly/catkin_new/src/ws/src/ork_tabletop/test
+# Build directory: /home/looly/catkin_new/build/ws/src/ork_tabletop/test
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.
+add_test(object_recognition_tabletop_/home/looly/catkin_new/src/ws/src/ork_tabletop/test/../conf/detection.table.ros.ork "/home/looly/catkin_new/devel/share/object_recognition_core/cmake/../test/run_test.sh" "/home/looly/catkin_new/devel/setup.sh" "/home/looly/catkin_new/devel/share/object_recognition_core/cmake/../test/test_config.py -c /home/looly/catkin_new/src/ws/src/ork_tabletop/test/../conf/detection.table.ros.ork")
+add_test(object_recognition_tabletop_/home/looly/catkin_new/src/ws/src/ork_tabletop/test/../conf/detection.object.ros.ork "/home/looly/catkin_new/devel/share/object_recognition_core/cmake/../test/run_test.sh" "/home/looly/catkin_new/devel/setup.sh" "/home/looly/catkin_new/devel/share/object_recognition_core/cmake/../test/test_config.py -c /home/looly/catkin_new/src/ws/src/ork_tabletop/test/../conf/detection.object.ros.ork")
+add_test(object_recognition_tabletop_/home/looly/catkin_new/src/ws/src/ork_tabletop/test/../conf/detection.object.ork "/home/looly/catkin_new/devel/share/object_recognition_core/cmake/../test/run_test.sh" "/home/looly/catkin_new/devel/setup.sh" "/home/looly/catkin_new/devel/share/object_recognition_core/cmake/../test/test_config.py -c /home/looly/catkin_new/src/ws/src/ork_tabletop/test/../conf/detection.object.ork")
+add_test(object_recognition_tabletop_/home/looly/catkin_new/src/ws/src/ork_tabletop/test/../conf/detection.table.ork "/home/looly/catkin_new/devel/share/object_recognition_core/cmake/../test/run_test.sh" "/home/looly/catkin_new/devel/setup.sh" "/home/looly/catkin_new/devel/share/object_recognition_core/cmake/../test/test_config.py -c /home/looly/catkin_new/src/ws/src/ork_tabletop/test/../conf/detection.table.ork")
+add_test(object_recognition_tabletop_sink_TablePublisher "/home/looly/catkin_new/devel/share/object_recognition_core/cmake/../test/run_test.sh" "/home/looly/catkin_new/devel/setup.sh" "/home/looly/catkin_new/devel/share/object_recognition_core/cmake/../test/test_sink.py TablePublisher object_recognition_tabletop {}")

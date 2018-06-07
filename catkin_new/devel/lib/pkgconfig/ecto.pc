@@ -1,0 +1,8 @@
+prefix=/home/looly/catkin_new/devel
+
+Name: ecto
+Description: Description of ecto
+Version: 0.6.12
+Cflags: -I/home/looly/catkin_new/src/ws/src/ecto/include -I/usr/include -I/usr/include/python2.7
+Libs: -L/home/looly/catkin_new/devel/lib -lecto /usr/lib/x86_64-linux-gnu/libpython2.7.so
+Requires: 

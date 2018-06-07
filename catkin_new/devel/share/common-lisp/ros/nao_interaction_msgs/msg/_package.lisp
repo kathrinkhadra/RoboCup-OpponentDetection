@@ -1,0 +1,13 @@
+(cl:defpackage nao_interaction_msgs-msg
+  (:use )
+  (:export
+   "<AUDIOSOURCELOCALIZATION>"
+   "AUDIOSOURCELOCALIZATION"
+   "<FACEDETECTED>"
+   "FACEDETECTED"
+   "<LANDMARKDETECTED>"
+   "LANDMARKDETECTED"
+   "<MOVEMENTDETECTED>"
+   "MOVEMENTDETECTED"
+  ))
+

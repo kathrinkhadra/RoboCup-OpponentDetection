@@ -1,0 +1,8 @@
+prefix=/home/looly/catkin_new/install
+
+Name: ecto_ros
+Description: Description of ecto_ros
+Version: 0.4.8
+Cflags: -I/home/looly/catkin_new/install/include
+Libs: -L/home/looly/catkin_new/install/lib 
+Requires: 

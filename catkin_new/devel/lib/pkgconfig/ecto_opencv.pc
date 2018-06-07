@@ -1,0 +1,8 @@
+prefix=/home/looly/catkin_new/devel
+
+Name: ecto_opencv
+Description: Description of ecto_opencv
+Version: 0.7.2
+Cflags: 
+Libs: -L/home/looly/catkin_new/devel/lib 
+Requires: ecto opencv_candidate

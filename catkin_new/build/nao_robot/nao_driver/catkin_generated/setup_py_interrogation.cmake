@@ -1,0 +1,6 @@
+set(nao_driver_SETUP_PY_VERSION "0.2.3")
+set(nao_driver_SETUP_PY_SCRIPTS "")
+set(nao_driver_SETUP_PY_PACKAGES "nao_driver")
+set(nao_driver_SETUP_PY_PACKAGE_DIRS "src/nao_driver")
+set(nao_driver_SETUP_PY_MODULES "")
+set(nao_driver_SETUP_PY_MODULE_DIRS "")

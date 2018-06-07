@@ -1,0 +1,8 @@
+prefix=/home/looly/catkin_new/devel
+
+Name: ecto_openni
+Description: Description of ecto_openni
+Version: 0.4.0
+Cflags: 
+Libs: -L/home/looly/catkin_new/devel/lib 
+Requires: ecto

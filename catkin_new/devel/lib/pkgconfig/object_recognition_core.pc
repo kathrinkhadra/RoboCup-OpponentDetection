@@ -1,0 +1,8 @@
+prefix=/home/looly/catkin_new/devel
+
+Name: object_recognition_core
+Description: Description of object_recognition_core
+Version: 0.6.7
+Cflags: -I/home/looly/catkin_new/src/ws/src/ork_core/include
+Libs: -L/home/looly/catkin_new/devel/lib -lobject_recognition_core_db -lobject_recognition_core_common
+Requires: sensor_msgs ecto

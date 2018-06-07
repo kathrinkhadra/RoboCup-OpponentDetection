@@ -1,0 +1,6 @@
+set(ecto_ros_SETUP_PY_VERSION "0.4.8")
+set(ecto_ros_SETUP_PY_SCRIPTS "")
+set(ecto_ros_SETUP_PY_PACKAGES "ecto_ros")
+set(ecto_ros_SETUP_PY_PACKAGE_DIRS "python/ecto_ros")
+set(ecto_ros_SETUP_PY_MODULES "")
+set(ecto_ros_SETUP_PY_MODULE_DIRS "")

@@ -1,0 +1,8 @@
+prefix=/home/looly/catkin_new/install
+
+Name: nao_pose
+Description: Description of nao_pose
+Version: 0.2.3
+Cflags: 
+Libs: -L/home/looly/catkin_new/install/lib 
+Requires: 

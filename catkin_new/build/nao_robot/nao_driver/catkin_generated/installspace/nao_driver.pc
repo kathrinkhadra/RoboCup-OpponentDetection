@@ -1,0 +1,8 @@
+prefix=/home/looly/catkin_new/install
+
+Name: nao_driver
+Description: Description of nao_driver
+Version: 0.2.3
+Cflags: -I/home/looly/catkin_new/install/include
+Libs: -L/home/looly/catkin_new/install/lib 
+Requires: dynamic_reconfigure
