@@ -17,7 +17,7 @@ Better: opencv_traincascade -data data -vec positives.vec -bg bg.txt -numStages 
 
 
 
-create new vec file!!!!!
+vec file of this Version in folder
 
 
 
