@@ -38,7 +38,7 @@ lower= (58,24,0)
 upper = (255, 255, 47)
 
 while True:
-    untitled1.template_matching(string)
+    #untitled1.template_matching(string)
     blue_detection.blue_detection(image,videoDevice,captureDevice,height,width,lower,upper)
     
     if cv2.waitKey(33) == 27:
