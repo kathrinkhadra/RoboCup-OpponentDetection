@@ -24,7 +24,7 @@ upper = (41, 255, 255)
 pts = deque(maxlen=64)
 
 
-ip_addr = "169.254.28.227"  # Replace here with your NaoQi's IP address.
+ip_addr = "169.254.77.44"  # Replace here with your NaoQi's IP address.
 port_num = 9559
 
 # get NAOqi module proxy
@@ -38,7 +38,7 @@ captureDevice = videoDevice.subscribeCamera(
     "test", AL_kBottomCamera, AL_kQVGA, AL_kBGRColorSpace, 10)
 
 # create image
-naowidth = 320
+width = 320
 height = 240
 image = np.zeros((height, width, 3), np.uint8)
 
@@ -86,19 +86,18 @@ while True:
         		# find the largest contour in the mask, then use
         		# it to compute the minimum enclosing circle and
         		# centroid
-        		c = max(cnts, key=cv2.contourArea)
-        		((x, y), radius) = cv2.minEnclosingCircle(c)
-        		M = cv2.moments(c)
-        		center = (int(M["m10"] / M["m00"]), int(M["m01"] / M["m00"]))
-         
-        		# only proceed if the radius meets a minimum size
-        		if radius > 10:
-        			# draw the circle and centroid on the frame,
-        			# then update the list of tracked points
-        			cv2.circle(image, (int(x), int(y)), int(radius),
-        				(0, 255, 255), 2)
-        			cv2.circle(image, center, 5, (0, 0, 255), -1)
-         
+            c = max(cnts, key=cv2.contourArea)
+            ((x, y), radius) = cv2.minEnclosingCircle(c)
+            M = cv2.moments(c)
+            center = (int(M["m10"] / M["m00"]), int(M["m01"] / M["m00"]))
+            print(radius)
+            # only proceed if the radius meets a minimum size
+            if radius > 10:
+			# draw the circle and centroid on the frame,
+			# then update the list of tracked points
+			cv2.circle(image, (int(x), int(y)), int(radius),
+				(0, 255, 255), 2)
+			cv2.circle(image, center, 5, (0, 0, 255), -1)
         	# update the points queue
         pts.appendleft(center)
         
@@ -114,10 +113,10 @@ while True:
               # 64 for buffer
         		thickness = int(np.sqrt(64 / float(i + 1)) * 2.5)
         		cv2.line(image, pts[i - 1], pts[i], (0, 0, 255), thickness)
-     
-    cv2.imshow("top-camera-320x240", image)
-    cv2.imshow('mask', mask)
-    cv2.imshow('res',res)
+        
+        cv2.imshow("top-camera-320x240", image)
+        cv2.imshow('mask', mask)
+        cv2.imshow('res',res)
     # exit by [ESC]
     if cv2.waitKey(33) == 27:
         break
