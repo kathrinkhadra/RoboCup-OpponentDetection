@@ -38,7 +38,7 @@ captureDevice = videoDevice.subscribeCamera(
     "test", AL_kBottomCamera, AL_kQVGA, AL_kBGRColorSpace, 10)
 
 # create image
-width = 320
+naowidth = 320
 height = 240
 image = np.zeros((height, width, 3), np.uint8)
 

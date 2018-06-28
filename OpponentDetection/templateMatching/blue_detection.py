@@ -58,8 +58,6 @@ def blue_detection(image,videoDevice,captureDevice,height,width,lower,upper):
         mask = cv2.dilate(mask, None, iterations=2)
         res = cv2.bitwise_and(image,image, mask= mask)
         
-        ret, thresh = cv2.threshold(mask, 127, 255, 0)
-        contour_mask, contours, hierarchy = cv2.findContours(thresh, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
         
         height, width, _ = image.shape
         min_x, min_y = width, height
@@ -68,19 +66,19 @@ def blue_detection(image,videoDevice,captureDevice,height,width,lower,upper):
         contour_mask, contours, hierarchy = cv2.findContours(thresh, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
         ret=[]
         for i in contours:
-            ret = cv2.matchShapes(i,contour_body,1,0.0)
+            ret.append(cv2.matchShapes(i,contour_body,1,0.0));
             
-            if max(ret) >=0.1:
-                for indx,i in enumerate(contours):
-                    if ret[indx]==max(ret):
-                        (x,y,w,h) = cv2.boundingRect(contours[indx])
-                        min_x, max_x = min(x, min_x), max(x+w, max_x)
-                        min_y, max_y = min(y, min_y), max(y+h, max_y)
-                        if w > 80 and h > 80:
-                            cv2.rectangle(image, (x,y), (x+w,y+h), (255, 0, 0), 2)
+        if min(ret) <=0.1:
+            for indx,i in enumerate(contours):
+                if ret[indx]==min(ret):
+                    (x,y,w,h) = cv2.boundingRect(contours[indx])
+                    min_x, max_x = min(x, min_x), max(x+w, max_x)
+                    min_y, max_y = min(y, min_y), max(y+h, max_y)
+                    if w > 80 and h > 80:
+                        cv2.rectangle(image, (x,y), (x+w,y+h), (0, 0, 255), 2)
                     
-                if max_x - min_x > 0 and max_y - min_y > 0:
-                    cv2.rectangle(image, (min_x, min_y), (max_x, max_y), (255, 0, 0), 2)
+            if max_x - min_x > 0 and max_y - min_y > 0:
+                cv2.rectangle(image, (min_x, min_y), (max_x, max_y), (0, 0, 255), 2)
      
     cv2.imshow("top-camera-320x240", image)
     cv2.imshow('mask', mask)

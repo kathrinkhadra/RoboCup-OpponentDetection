@@ -7,28 +7,29 @@ Created on Mon Jun 25 19:26:28 2018
 """
 from collections import deque
 #import sys
-import imutils
+#import imutils
 import numpy as np
 import cv2
 from naoqi import ALProxy
-import untitled1
+#import untitled1
 import blue_detection 
 
 string ="images" + "/*.png"
-
+fractionMaxSpeed = 0.8
 ip_addr = "169.254.28.227"  # Replace here with your NaoQi's IP address.
 port_num = 9559
-
+posture = ALProxy("ALRobotPosture", ip_addr, port_num)
 # get NAOqi module proxy
 videoDevice = ALProxy('ALVideoDevice', ip_addr, port_num)
 
+ # Go to posture stand
+posture.goToPosture("StandInit", fractionMaxSpeed)
 # subscribe top camera
-AL_kBottomCamera = 1
+AL_kBottomCamera = 0
 AL_kQVGA = 1            # 320x240
 AL_kBGRColorSpace = 13
 captureDevice = videoDevice.subscribeCamera(
     "test", AL_kBottomCamera, AL_kQVGA, AL_kBGRColorSpace, 10)
-
 # create image
 width = 320
 height = 240
