@@ -132,7 +132,7 @@ def blue_detection(image,videoDevice,captureDevice,height,width,lower,upper,dete
             if startX < key.pt[0] < endX and startY < key.pt[1] < endY:
                counter+= 1
         
-        if counter < 0:
+        if counter != 0:
             return True
         else:
             return False

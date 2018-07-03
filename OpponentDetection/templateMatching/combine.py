@@ -32,7 +32,7 @@ AL_kBottomCamera = 0
 AL_kQVGA = 1            # 320x240
 AL_kBGRColorSpace = 13
 captureDevice = videoDevice.subscribeCamera(
-    "test", AL_kBottomCamera, AL_kQVGA, AL_kBGRColorSpace, 10)
+    "test", AL_kBottomCamera, AL_kQVGA, AL_kBGRColorSpace, 5)
 # create image
 width = 320
 height = 240
